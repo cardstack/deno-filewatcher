@@ -27,9 +27,9 @@ changes to the files in the watched directory tree. The clients can also request
 
    While the client is running, from the client CLI, you can type:
    ```
-   file::relative_file_path
+   file::my_files/foo.txt
    ```
-   to view the file's contents.
+   to view the contents of the file `my_files/foo.txt` (this is the path relative to the directory being watched).
 
    Additionally, you can type:
    ```
