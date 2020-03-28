@@ -23,16 +23,16 @@ changes to the files in the watched directory tree. The clients can also request
    ```
    The server URL is optional. If you don't provide the server URL, then the client will default to http://localhost:8080 (which is the default server port)
 
-   The server won't actually start watching the filesystem until there is at least one client connected. And the server will stop watching the filesystem if all the clients disconnect. When a client first connects the server will inform the client about all the files that are in the watched directory. From that point forward the client will receive notifications only for modifed and removed files.
+The server won't actually start watching the filesystem until there is at least one client connected. And the server will stop watching the filesystem if all the clients disconnect. When a client first connects the server will inform the client about all the files that are in the watched directory. From that point forward the client will receive notifications only for modifed and removed files.
 
-   While the client is running, from the client CLI, you can type:
+While the client is running, from the client CLI, you can type:
    ```
    file::my_files/foo.txt
    ```
-   to view the contents of the file `my_files/foo.txt` (this is the path relative to the directory being watched).
+to view the contents of the file `my_files/foo.txt` (this is the path relative to the directory being watched).
 
-   Additionally, you can type:
+Additionally, you can type:
    ```
    close
    ```
-   to quit the client session.
+to quit the client session.
